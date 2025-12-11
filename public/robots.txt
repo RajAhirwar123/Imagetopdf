@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap:
+Sitemap:https://imagetopdfs.vercel.app/sitemap.xml
