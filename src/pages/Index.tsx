@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import TopAdBanner from "@/components/TopAdBanner";
 import BottomAdBanner from "@/components/BottomAdBanner";
-import InContentAd from "@/components/InContentAd";
+//import InContentAd from "@/components/InContentAd";
 
 const Index = () => {
   return (
@@ -18,7 +18,7 @@ const Index = () => {
         <Hero />
         <ImageConverter />
         {/* In-Content Ad - Between Converter and How To Use */}
-        <InContentAd />
+        {/* <InContentAd /> */}
         <HowToUse />
         <FAQ />
       </main>
