@@ -5,7 +5,7 @@ import HowToUse from "@/components/HowToUse";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import TopAdBanner from "@/components/TopAdBanner";
-import BottomAdBanner from "@/components/BottomAdBanner";
+//import BottomAdBanner from "@/components/BottomAdBanner";
 import InContentAd from "@/components/InContentAd";
 
 const Index = () => {
@@ -23,8 +23,8 @@ const Index = () => {
         <FAQ />
       </main>
       {/* Bottom Ad Banner - Above Footer */}
-      <BottomAdBanner />
-      <Footer />
+      {/* <BottomAdBanner />
+      <Footer /> */}
     </div>
   );
 };
