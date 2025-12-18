@@ -8,48 +8,63 @@ import {
 const faqs = [
   {
     question: "Is this Image to PDF converter free to use?",
-    answer: "Yes! Our Image to PDF converter is completely free with no hidden costs. There's no registration required, no watermarks on your PDFs, and no limits on how many conversions you can do.",
+    answer:
+      "Yes, this is a completely free online image to PDF converter. No signup, no watermark, and no hidden limits. You can convert unlimited JPG, PNG, or JPEG images directly in your browser.",
   },
   {
     question: "What image formats are supported?",
-    answer: "We support the most common image formats: JPG, JPEG, and PNG. These formats cover the vast majority of images you'll encounter, from photos to screenshots and graphics.",
+    answer:
+      "We support JPG, JPEG, and PNG image formats. These formats cover photos, screenshots, and scanned documents commonly used for PDF conversion.",
   },
   {
     question: "Is my data secure? Are images uploaded to a server?",
-    answer: "Your images never leave your device. All processing happens directly in your browser using JavaScript. We don't upload, store, or have access to any of your images. Your files remain 100% private.",
+    answer:
+      "Your images are never uploaded to any server. All image to PDF conversion happens locally in your browser, ensuring 100% privacy and data security.",
   },
   {
-    question: "Can I convert multiple images into one PDF?",
-    answer: "Absolutely! You can select multiple images at once or add them one by one. All selected images will be combined into a single PDF file, with each image on its own page.",
+    question: "Can I convert multiple images into one PDF file?",
+    answer:
+      "Yes, you can combine multiple images into a single PDF. Each image will be placed on a separate PDF page in the order you choose.",
   },
   {
     question: "Can I reorder images before converting to PDF?",
-    answer: "Yes! After uploading your images, you can drag and drop them to rearrange the order. The final PDF will maintain the exact order you've arranged.",
+    answer:
+      "Yes, you can easily drag and drop images to rearrange their order before converting them into a PDF document.",
   },
   {
-    question: "What's the maximum file size or number of images allowed?",
-    answer: "There's no strict limit, but performance depends on your device. For best results, we recommend keeping individual images under 10MB and batch conversions under 50 images. Larger batches may take longer to process.",
+    question: "Is there a file size or image limit?",
+    answer:
+      "There is no fixed limit. However, for smooth performance, we recommend keeping images under 10MB each and batches under 50 images.",
   },
   {
-    question: "Does this work on mobile devices?",
-    answer: "Yes! Our converter is fully responsive and works on smartphones, tablets, and desktop computers. You can even use the drag-and-drop feature on touch devices.",
+    question: "Does this Image to PDF converter work on mobile?",
+    answer:
+      "Yes, this online image to PDF converter works on mobile phones, tablets, and desktop devices without installing any app.",
   },
   {
-    question: "What's the quality of the output PDF?",
-    answer: "The PDF maintains the original quality of your images. Images are scaled to fit the page while preserving their aspect ratio, ensuring they look great in the final document.",
+    question: "Will the PDF quality be reduced?",
+    answer:
+      "No, the output PDF maintains the original image quality while fitting each image properly on the page without distortion.",
   },
 ];
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-16 md:py-24">
+    <section
+      id="faq"
+      className="py-16 md:py-24"
+      aria-labelledby="faq-heading"
+    >
       <div className="container">
         <div className="mx-auto max-w-3xl text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Frequently Asked <span className="gradient-text">Questions</span>
+          <h2
+            id="faq-heading"
+            className="text-3xl md:text-4xl font-bold tracking-tight mb-4"
+          >
+            Image to PDF Converter – Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground text-lg">
-            Everything you need to know about our Image to PDF converter
+            Common questions about our free online Image to PDF converter
           </p>
         </div>
 
@@ -62,7 +77,7 @@ const FAQ = () => {
                 className="rounded-xl border border-border bg-card px-6 data-[state=open]:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-5">
-                  <span className="font-medium text-foreground pr-4">{faq.question}</span>
+                  <span className="font-medium pr-4">{faq.question}</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-5">
                   {faq.answer}
@@ -71,6 +86,12 @@ const FAQ = () => {
             ))}
           </Accordion>
         </div>
+
+        {/* Hidden SEO text */}
+        <p className="sr-only">
+          Free online image to PDF converter FAQs covering privacy, quality,
+          supported formats, mobile usage, and security.
+        </p>
       </div>
     </section>
   );
