@@ -11,18 +11,18 @@ const Hero = () => {
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground mb-6 animate-fade-in">
             <Sparkles className="h-4 w-4" />
-            <span>100% Free • No Registration Required</span>
+            <span>100% Free • No Upload • No Signup</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Convert Images to PDF
+          100% Free • No Upload • No Signup
             <br />
-            <span className="gradient-text">Instantly & Free</span>
+            <span className="gradient-text">No Upload • No Watermark • 100% Secure</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Transform your JPG, JPEG, and PNG images into a single PDF document. 
-            Drag, drop, reorder, and download — all in your browser, no upload to servers.
+             Convert JPG, JPEG & PNG images to PDF instantly using our free image to PDF converter.
+            Works completely in your browser — no upload, no signup, and full privacy guaranteed.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -45,6 +45,10 @@ const Hero = () => {
               <span>No Limits</span>
             </div>
           </div>
+          {/* Hidden SEO helper heading */}
+          <h2 className="sr-only">
+            Online Image to PDF Converter Without Upload or Watermark
+          </h2>
         </div>
       </div>
     </section>
