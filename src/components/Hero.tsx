@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          100% Free • No Upload • No Signup
+          Free Image to PDF Converter
             <br />
             <span className="gradient-text">No Upload • No Watermark • 100% Secure</span>
           </h1>
